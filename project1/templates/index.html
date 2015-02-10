@@ -1,7 +1,7 @@
 {% extends "home-template.html" %}
 
 {% block notification_content %}
-    <h4>Notification</h4>
+    <h3 class="heading-white">Notification</h3>
     <p>If I wanted to notify you of something, I could do it here.</p>
 {% endblock %}
 
@@ -15,7 +15,7 @@
 
 
 {% block main-center %}
-    <h1>This is the Center Content</h1>
+    <h1 class="heading-white">This is the Center Content</h1>
     <p>
         Lorem ipsum dolor sit amet, suscipit at, cras in. Dolor in, urna praesent eu wisi assumenda urna.
         Nulla eget elit morbi eget nulla interdum, posuere integer, vestibulum in quis quisque aliquet.
@@ -57,11 +57,16 @@
 {% endblock %}
 
 {% block main-right %}
-    Conent in the right side box
+    <ul class="right-menu">
+        <li><a href="#">Menu Item 1</a></li>
+        <li><a href="#">Menu Item 2</a></li>
+        <li><a href="#">Menu Item 3</a></li>
+        <li><a href="#">Menu Item 4</a></li>
+    </ul>
 {% endblock %}
 
 {% block foot-left %}
-    Content in the left side footer
+    Thanks for visiting our site... I could give you a little more lorem ipsum here, but I will refrain. :-)
 {% endblock %}
 
 

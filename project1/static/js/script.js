@@ -19,7 +19,7 @@ $(function() {
 
     //left menu float stays with them regardless of how far down they scroll
     $(window).scroll(function (event) {
-        if ($(this).scrollTop() > 50) {
+        if ($(this).scrollTop() > 55) {
           $('.menu-float').addClass('fixed');
         } else {
           $('.menu-float').removeClass('fixed');

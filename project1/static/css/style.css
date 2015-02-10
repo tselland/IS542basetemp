@@ -1,49 +1,58 @@
-
 /* HEADER SECTION*/
-
 header {
-  background-color: #051935;
-  font-weight: 300;
-  color: #7FBF90;
-  box-shadow: 0 2px 5px #888;
+    background-color: #123753;
+    font-weight: 300;
+    color: #7FBF90;
+    box-shadow: 0 2px 5px #888;
+}
+header,
+main,
+footer,
+.table-flex {
+    display: flex;
+}
+body {
+    margin: 0;
+    background-color: #0E5146;
 }
 .tab-bar {
-  list-style-type: none;
-  margin: 0;
-  display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    display: inline-flex;
 }
 .tab-bar li {
-  padding: 0 15px;
-  height: 100%;
-  position: relative;
+    padding: 0 15px;
+    height: 100%;
+    position: relative;
 
 }
 .tab-bar li a {
-  height: 100%;
-  line-height: 3;
-  color: #7FBF90;
-  text-decoration: none;
+    height: 100%;
+    line-height: 3;
+    color: #718EA4;
+    text-decoration: none;
 }
 .tab-bar li ul {
-  position: absolute;
+    position: absolute;
 }
 .tab-bar li:hover {
-  background-color: #4f628e;
+    background-color: #496D89;
 }
 .tab-active {
-  color: white;
-  background-color: #7887ab;
-  border-bottom: solid 1px white;
+    color: white;
+    background-color: #29506E;
+    border-bottom: solid 1px white;
+}
+.dropdown-menu {
+    display: none;
+    background-color: #123753;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: -15px;
+    z-index: 100;
 }
 
-.dropdown-menu {
-  display: none;
-  background-color: #2e4172;
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: -15px;
-  z-index: 100;
-}
+/* Main Content */
 .main-left {
     background-color: #00362D;
     color: #7FBF90;
@@ -52,42 +61,9 @@ header {
     background-color: #0E5146;
     color: #7FBF90;
 }
-.footer-left,
-.footer-right {
-    background-color: #43877B;
-    min-height: 200px;
-}
-
-
-.header-right,
-.footer-right {
-  text-align: right;
-}
-
-/* Body */
-body {
-    margin: 0;
-}
-
-header,
-main,
-footer,
-.table-flex {
-    display: flex;
-}
-
-.header-left,
-.header-right,
-.main-left,
-.main-right,
-.footer-left,
-.footer-right,
-.table-column {
-    flex: 1 1;
-}
 .main-left,
 .main-right {
-    min-width: 230px;
+    width: 230px;
     padding: 10px;
 }
 
@@ -96,32 +72,66 @@ footer,
     background-color: #246C60;
     padding: 15px;
 }
+.right-menu li {
+    min-height: 50px;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+.right-menu li a {
+    text-decoration: none;
+    color: #7FBF90;
+}
 
+/* Footer Styles */
+.footer-left,
+.footer-right {
+    background-color: #43877B;
+    min-height: 100px;
+    padding: 30px;
+}
+
+.header-right,
+.footer-right {
+    text-align: right;
+}
+
+/* Body */
+.header-left,
+.header-right,
+.footer-left,
+.footer-right,
+.table-column {
+    flex: 1 1;
+}
 
 /* Notification Section */
 .notification {
-  position: absolute;
-  right: 10px;
-  top: 50px;
-  width: 300px;
-  background-color: #7887ab;
-  color: #7FBF90;
-  /*border-bottom: solid 1px white;*/
-  box-shadow: 0px 2px 1px 0px rgba(136, 136, 136, 0.5);
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    width: 300px;
+    background-color: #7887ab;
+    color: #7FBF90;
+    /*border-bottom: solid 1px white;*/
+    box-shadow: 0px 2px 1px 0px rgba(136, 136, 136, 0.5);
 }
 .notification i {
-  float: right;
+    float: right;
 }
 
 /* Floating Menu */
 .menu-float ul {
-  list-style-type: none;
-  padding-left: 0;
-  color: #7FBF90;
-  width: 240px;
+    list-style-type: none;
+    padding-left: 0;
+    color: #7FBF90;
+    max-width: 220px;
+    text-align: center;
 }
-.menu-float ul li {
-  text-align: center;
+.menu-float {
+    padding-left: 10px;
 }
 .heading-white {
     color:white;
@@ -129,5 +139,55 @@ footer,
 .fixed {
     position:fixed;
     top:0;
-    left:0;
+    left: 10px;
+    z-index: 1;
 }
+
+/* ADJUSTMENTS FOR SMALLER SCREENS */
+
+/* Tablet Size */
+@media screen and (max-width: 680px) and (min-width: 480px) {
+    main,
+    .table-flex {
+        flex-direction: column;
+    }
+    .main-center {
+        order: 1;
+    }
+    .main-left {
+        order: 2;
+    }
+    .main-right {
+        order: 3;
+    }
+    .fixed {
+        position: relative;
+    }
+}
+
+/* Phone Size */
+@media screen and (max-width: 480px) {
+  header,
+  main,
+  footer,
+  .table-flex {
+    flex-direction: column;
+  }
+  .tab-bar {
+    display: block;
+    padding: 0;
+  }
+  .main-center {
+    order: 1;
+  }
+  .main-left {
+    order: 2;
+  }
+  .main-right {
+    order: 3;
+  }
+  .fixed {
+      position: relative;
+  }
+}
+
