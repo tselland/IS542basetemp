@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block header %}
+    <header>
+        <i class="fa fa-arrows fa-3x logo"></i>
+        <div class="header-left">
+            <ul class="tab-bar">
+                <li class="tab-active">
+                    <a>Home</a>
+                </li>
+                <li>
+                    <a class="dropdown-toggle" role="button" >Products <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Wholesale</a></li>
+                        <li><a href="#">Retail</a></li>
+                        <li><a href="#">Other</a></li>
+                    </ul>
+                </li>
+                <li><a>Services</a></li>
+                <li>
+                    <a>Other</a>
+                </li>
+                <li><a>Social Media</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <ul class="tab-bar">
+                <li>
+                    <a class="dropdown-toggle" role="button" >User <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu menu-right" role="menu">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <span class="notification">
+            {% block notification_content %}
+
+            {% endblock %}
+        </span>
+    </header>
+{% endblock %}
+{% block body %}
+
+    <main>
+        <div class="main-left">
+            {% block main-left %}
+                <div class="menu-float">
+                    <h3 class="heading-green">
+                        This block will remain consistent unless it is overridden by a block on the index file.
+                    </h3>
+                </div>
+            {% endblock %}
+        </div>
+        <div class="main-center">
+            {% block main-center %}
+            {% endblock %}
+        </div>
+
+        <div class="main-right">
+            {% block main-right %}
+            {% endblock %}
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+            {% block foot-left %}
+            {% endblock %}
+        </div>
+        <div class="footer-right">&copy; ${ current_year } tselland.com | All Rights Reserved
+        </div>
+    </footer>
+
+{% endblock %}
