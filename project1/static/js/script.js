@@ -4,11 +4,6 @@
 
 $(function() {
 
-    var year = (new Date).getFullYear();
-
-    $('.current-year').text(year);
-
-
   $("ul.tab-bar > li").click(function() {
     $(this).siblings('.tab-active').removeClass('tab-active');
     $(this).addClass('tab-active');
@@ -22,12 +17,9 @@ $(function() {
        $(this).siblings('.dropdown-menu').fadeToggle();
     });
 
-    var top = $('.menu-float').offset().top - parseFloat($('.menu-float').css('marginTop').replace(/auto/, 100));
-
-
-    //tab bar stays with them regardless of how far down they scroll
+    //left menu float stays with them regardless of how far down they scroll
     $(window).scroll(function (event) {
-        if ($(this).scrollTop() >= top) {
+        if ($(this).scrollTop() > 50) {
           $('.menu-float').addClass('fixed');
         } else {
           $('.menu-float').removeClass('fixed');

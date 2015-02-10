@@ -48,6 +48,10 @@ header {
     background-color: #00362D;
     color: #7FBF90;
 }
+.main-right {
+    background-color: #0E5146;
+    color: #7FBF90;
+}
 .footer-left,
 .footer-right {
     background-color: #43877B;
@@ -118,4 +122,12 @@ footer,
 }
 .menu-float ul li {
   text-align: center;
+}
+.heading-white {
+    color:white;
+}
+.fixed {
+    position:fixed;
+    top:0;
+    left:0;
 }
