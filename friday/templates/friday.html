@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Friday Forecast Generator</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/static/js/friday.js"></script>
+
+</head>
+<body>
+    <form action="/friday/" method="POST">{% csrf_token %}
+        {{ forecastForm }}
+        {{ eventFormset.management_form }}
+        {% for form in eventFormset %}
+            <div class="table">
+                <table class="no_error">
+                    {{ form.as_table }}
+                </table>
+            </div>
+
+        {% endfor %}
+        {{ announcementFormset.management_form }}
+        {% for form in announcementFormset %}
+            <div class="table">
+                <table class="no_error">
+                    {{ form.as_table }}
+                </table>
+            </div>
+
+        {% endfor %}
+        <input type="button" value="+ Event" id="add_event" class="btn btn-default">
+        <input type="button" value="+ Announcement" id="add_announcement" class="btn btn-default">
+        <input type="submit" value="Create Forecast" class="btn btn-success" />
+    </form>
+    <script>
+    $('#add_event').click(function() {
+        cloneMore('div.table:last', 'eventForm');
+    });
+    $('#add_announcement').click(function() {
+        cloneMore('div.table:last', 'announcementForm');
+    });
+</script>
+</body>
+</html>
