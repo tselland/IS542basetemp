@@ -2,13 +2,20 @@ __author__ = 'travisselland'
 
 from django import forms
 import django.utils.html as htmlUtil
+from basetemp import middleware
+
 
 
 class ForecastForm(forms.Form):
     """ Base forecast form. This information will be submitted regardless of the number of events or announcements. """
 
+
+
+
     def __init__(self, request, *args, **kwargs):
         self.request = request
+        self.form_id = next(request.session.generator)
+        print (self.form_id)
         #init of the Forms Super Class
         super().__init__(*args, **kwargs)
         #specialized init method used only for this form
@@ -18,16 +25,20 @@ class ForecastForm(forms.Form):
         return self.as_full()
 
     def init(self):
-        print('inside init')
+        pass
+
+    def commit(self):
+        pass
 
     def as_full(self):
-        "Returns this form rendered as HTML <tr>s -- INCLUDING the <table></table>."
+        "Returns this form rendered as HTML with form tags"
+        saveButton = '<input class="btn btn-default" type="submit" value="Save"/>'
         html = []
         html.append('<form>')
         html.append('<div class="input-group">')
         for field in self.fields:
             html.append('<input type="text" class="form-control datepicker" placeholder="mm-dd-yy" aria-describedby="date-addon"/>')
-        html.append('<input class="btn btn-default" type="submit" value="Save"/>')
+        html.append(saveButton)
         html.append('</div>')
         html.append('</form>')
         return htmlUtil.format_html(''.join(html))

@@ -18,3 +18,14 @@ function cloneMore(selector, type) {
     $(selector).after(newElement);
     console.log("Completed JS");
 }
+
+$(function() {
+    $(".datepicker").datepicker();
+
+    $('#add_event').click(function() {
+        cloneMore('div.table:last', 'eventForm');
+    });
+    $('#add_announcement').click(function() {
+        cloneMore('div.table:last', 'announcementForm');
+    });
+})
