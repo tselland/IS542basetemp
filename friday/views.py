@@ -7,15 +7,14 @@ from django.forms.formsets import formset_factory
 
 
 def index(request):
-    EventFormset = formset_factory(EventForm, extra=1)
-    AnnouncementFormset = formset_factory(AnnouncementForm, extra=1)
+    # EventFormset = formset_factory(EventForm, extra=1)
+    # AnnouncementFormset = formset_factory(AnnouncementForm, extra=1)
 
     if request.method == "POST":
         #initial forecast form doesn't need a formset.
         forecastForm = ForecastForm(request.POST)
         # eventFormset = EventFormset(request.POST)
         # announcementFormset = AnnouncementFormset(request.POST)
-
 
         if(forecastForm.is_valid() ): #& eventFormset.is_valid() & announcementFormset.is_valid()):
 
@@ -79,26 +78,3 @@ class DateSelectorWidget(widgets.MultiWidget):
             return str(D)
 
 
-
-
-
-class EventForm(forms.Form):
-    eTitle = forms.CharField(label="Event Title", required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    date = DateSelectorWidget()
-    time = forms.TimeField(required=False, widget=forms.TimeInput(attrs={'class': 'form-control'}))
-    location = forms.CharField(label="Event Location", required=False, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    eDescription = forms.CharField(label="Event Description", required=False, widget=forms.Textarea(attrs={'class': 'form-control'}))
-
-class AnnouncementForm(forms.Form):
-    aTitle = forms.CharField(label="Announcement Title", required=True, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    aDescription = forms.CharField(label="Announcement Description", required=False, widget=forms.Textarea(attrs={'class': 'form-control'}))
-
-class ForecastForm(forms.Form):
-    date = DateSelectorWidget()
-    message = forms.CharField(label="Reid's Message", required=False, widget=forms.Textarea(attrs={'class': 'form-control'}))
-
-    def clean_message(self):
-        data = self.cleaned_data['message']
-        if data == '':
-            raise forms.ValidationError('Message Field Empty')
-        return data
