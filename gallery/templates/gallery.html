@@ -1,0 +1,24 @@
+{% extends "home-template.html" %}
+{% load staticfiles %}
+
+{% block css-custom %}
+    <link rel="stylesheet" href="{% static "css/gallery.css" %}">
+{% endblock %}
+
+{% block main-center %}
+
+    <div id="gallery_container">
+        {% for image in images %}
+            <a href="/media/{{ image.fileName }}" download>
+
+                    {{ image.to_html }}
+
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block js-custom %}
+    <script type="text/javascript" src="{% static "js/gallery_plugin.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/gallery.js" %}"></script>
+{% endblock %}

@@ -1,3 +1,32 @@
 #gallery_container img {
-    height: 200px;
+    max-width: 200px;
 }
+
+.gallery_image img{
+
+}
+.img_container {
+    display:inline-block;
+}
+
+.image_title {
+    display:none;
+    text-align: center;
+    font-size: 20px;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: -20px;
+    width:10000px;
+}
+.show_title {
+    display:block;
+}
+
+.expanded_image {
+    transform: scale(1.5);
+    box-shadow: 2px -5px 5px #000000;
+    transition: all 0.5s ease-in-out;
+}
+
