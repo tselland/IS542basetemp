@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.shortcuts import render_to_response
 # Create your views here.
-
+from pagination import models as mod
 
 def pagination(request):
     params = {}
 
-    params['initial_page'] = 5
+    params['initial_page'] = 0
 
     return render_to_response('table_demo.html', params)
 
@@ -19,13 +19,15 @@ def get_table(request):
     except ValueError:
         page = 0
 
+    qry = mod.User.objects.all()
+    qry = qry[page * ROWS_PER_PAGE: (page + 1) * ROWS_PER_PAGE]
+
     users = []
-    for i in range(page * ROWS_PER_PAGE, (page+1) * ROWS_PER_PAGE):
+    for user in qry:
         users.append([
-            'user %s' % i,
-            'FirstName %s' % i,
-            'LastName %s' % i,
-            'email %s' % i,
+            user.first_name,
+            user.last_name,
+            user.email,
         ])
 
 

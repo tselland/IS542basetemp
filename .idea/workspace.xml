@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ed4c2f7-e7cb-4a94-8703-88bf4a4b95e8" name="Default" comment="Pagination project initial">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/Goodbye!.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/Tumblr_m6cd8mVA7a1r4aadqo1_500.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/brad.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/classDiagramInitial.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/colbert-laugh.gif" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/image_1.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/image_2.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/image_3.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/image_4.jpeg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/image_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/laughing.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/laughing2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/man.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gallery/images/ruff.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project1/templates/ajax-template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pagination/static/js/pagination.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pagination/templates/tabledemo.get_table.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project1/templates/base.html" afterPath="$PROJECT_DIR$/project1/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basetemp/settings.py" afterPath="$PROJECT_DIR$/basetemp/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pagination/templates/table_demo.html" afterPath="$PROJECT_DIR$/pagination/templates/table_demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basetemp/urls.py" afterPath="$PROJECT_DIR$/basetemp/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/tables.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pagination/models.py" afterPath="$PROJECT_DIR$/pagination/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pagination/static/js/pagination.js" afterPath="$PROJECT_DIR$/pagination/static/js/pagination.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pagination/views.py" afterPath="$PROJECT_DIR$/pagination/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -55,11 +42,21 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pagination/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="645">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="675">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tables.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/tables.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38011697" vertical-offset="0" max-vertical-offset="513">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,16 +66,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="225">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajax-template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project1/templates/ajax-template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="210">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -124,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pagination.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pagination.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pagination/static/js/pagination.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5421687" vertical-offset="0" max-vertical-offset="498">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#0#47#0" expanded="false" />
               </folding>
@@ -189,9 +176,11 @@
         <option value="$PROJECT_DIR$/project1/templates/ajax-template.html" />
         <option value="$PROJECT_DIR$/project1/templates/base.html" />
         <option value="$PROJECT_DIR$/pagination/templates/tabledemo.get_table.html" />
-        <option value="$PROJECT_DIR$/pagination/views.py" />
         <option value="$PROJECT_DIR$/pagination/templates/table_demo.html" />
         <option value="$PROJECT_DIR$/pagination/static/js/pagination.js" />
+        <option value="$PROJECT_DIR$/pagination/models.py" />
+        <option value="$PROJECT_DIR$/pagination/views.py" />
+        <option value="$PROJECT_DIR$/lib/tables.py" />
       </list>
     </option>
   </component>
@@ -256,7 +245,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gallery" />
+              <option name="myItemId" value="pagination" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,11 +259,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -659,7 +644,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426277935041</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="pagination js updates">
+      <created>1426286446952</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1426286446952</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -687,13 +678,13 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31082803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31082803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866243" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494465" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -721,6 +712,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
@@ -739,28 +731,14 @@
     <MESSAGE value="Gallery completion" />
     <MESSAGE value="Pagination project initial" />
     <MESSAGE value="Pagination js updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pagination js updates" />
+    <MESSAGE value="pagination js updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagination js updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/basetemp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1395">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project1/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="255">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basetemp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="255">
@@ -1096,14 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pagination/templates/tabledemo.get_table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="489">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project1/templates/home-template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-40.625" vertical-offset="30" max-vertical-offset="1230">
@@ -1112,13 +1082,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pagination/views.py">
+    <entry file="file://$PROJECT_DIR$/pagination/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="645">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1130,13 +1098,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pagination/templates/tabledemo.get_table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="489">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pagination/static/js/pagination.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5421687" vertical-offset="0" max-vertical-offset="498">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pagination/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="675">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38011697" vertical-offset="0" max-vertical-offset="513">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

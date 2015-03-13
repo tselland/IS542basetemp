@@ -18,7 +18,7 @@ $(function(){
         container.data('page', Math.min(0, page+1));
         container.trigger('table_refresh');
     });
-    
+
     container.on('table_refresh', function() {
         $.ajax({
             url: '/pagination/tabledemo.get_table/' + container.data('page')
