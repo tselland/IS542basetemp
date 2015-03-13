@@ -6,10 +6,17 @@
 {% endblock %}
 
 {% block main-center %}
+    <div id="table_container" data-page="${ initial_page }">
+        Table Goes here
+    </div>
 
+    <div id="button_container">
+        <button id="previous_page_btn" class="btn btn-default">Previous Page</button>
+        <button id="next_page_btn" class="btn btn-default">Next Page</button>
+    </div>
 
 {% endblock %}
 
 {% block js-custom %}
-
+    <script type="text/javascript" src="{% static "js/pagination.js" %}"></script>
 {% endblock %}
