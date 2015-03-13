@@ -3,10 +3,13 @@ __author__ = 'travisselland'
 class Table(list):
 
     headers = [ 'col1', 'col2', 'col3']
+    css_class = 'table table-bordered table-striped'
+
+    
 
     def __str__(self):
         html =[]
-        html.append('<table class="table table-bordered table-striped">')
+        html.append('<table class="{}">'.format(self.css_class))
 
         html.append('<tr>')
         for item in self.headers:
