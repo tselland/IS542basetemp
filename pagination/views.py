@@ -13,31 +13,16 @@ def pagination(request):
     return render_to_response('table_demo.html', params)
 
 
-ROWS_PER_PAGE = 5
-
 def get_table(request):
-    try:
-        page = int(request.urlparams[0])
-    except ValueError:
-        page = 0
+    params = {}
 
-    qry = mod.User.objects.all()
-    qry = qry[page * ROWS_PER_PAGE: (page + 1) * ROWS_PER_PAGE]
+    users = UserTable(mod.User.objects.all())
+    users.paginate(request)
 
-    users = UserTable()
-    for user in qry:
-        users.append([
-            user.first_name,
-            user.last_name,
-            user.email,
-        ])
+    params['users'] = users
 
-
-    params = {
-        'users':users
-    }
-
-    return render_to_response('table_demo.get_table.html', params)
+    return render_to_response('tabledemo.get_table.html', params)
 
 class UserTable(tables.Table):
     headers = ['First Name', 'Last Name', 'Email']
+    fields = ['first_name', 'last_name', 'email']

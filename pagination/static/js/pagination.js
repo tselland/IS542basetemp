@@ -21,7 +21,10 @@ $(function(){
 
     container.on('table_refresh', function() {
         $.ajax({
-            url: '/pagination/tabledemo.get_table/' + container.data('page')
+            url: '/pagination/tabledemo.get_table/',
+            data: {
+                table_page: container.data('page')
+            }
         }).success(function(data) {
               container.html(data)
         });
