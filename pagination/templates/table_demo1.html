@@ -3,6 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>
     <div id="table_container" data-page="{{ initial_page }}">
@@ -10,8 +12,12 @@
     </div>
 
     <div id="button_container">
-        <button id="previous_page_btn" class="btn btn-default">Previous Page</button>
-        <button id="next_page_btn" class="btn btn-default">Next Page</button>
+        <nav>
+          <ul class="pager">
+            <li class="previous" id="previous_page_btn"><a href="#"><span aria-hidden="true">&larr;</span> Previous</a></li>
+            <li class="next" id="next_page_btn"><a href="#">Next <span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+        </nav>
     </div>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>

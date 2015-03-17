@@ -16,7 +16,7 @@ def get_table(request):
     params = {}
 
     users = UserTable(mod.User.objects.all())
-    print("<<<<<<<<<<<<<<<<", users.__str__())
+
     users.paginate(request)
 
     for user in users.qry:
@@ -27,7 +27,7 @@ def get_table(request):
         ])
 
     params['table'] = users
-
+    print("<<<<<<<<<<<<<<<<", users.__str__())
     return render_to_response('tabledemo.get_table.html', params)
 
 class UserTable(Table):
