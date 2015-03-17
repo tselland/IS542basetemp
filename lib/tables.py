@@ -12,10 +12,11 @@ class Table(list):
 
     def paginate(self, request):
         try:
-            page = int(request.REQUEST.get('table_page'))
+            page = int(request.urlparams[0])
         except ValueError:
             page = 0
         self.qry = self.qry[page * self.rows_per_page: (page + 1) * self.rows_per_page]
+        print("inside paginate")
 
     def __str__(self):
         html =[]

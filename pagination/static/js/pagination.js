@@ -8,25 +8,29 @@ $(function(){
     $('#previous_page_btn').off('click.page').on('click.page', function() {
         var page = parseInt(container.data('page'));
         console.log('previous page!');
-        container.data('page', Math.max(20, page-1));
-        container.trigger('table_refresh');
+        console.log(page);
+        container.data('page', Math.max(0, page-1));
+        //container.trigger('table_refresh');
+
     });
 
     $('#next_page_btn').off('click.page').on('click.page', function() {
         var page = parseInt(container.data('page'));
         console.log('next page!');
-        container.data('page', Math.min(0, page+1));
-        container.trigger('table_refresh');
+        container.data('page', Math.min(20, page+1));
+        //container.trigger('table_refresh');
+        console.log(page);
     });
 
     container.on('table_refresh', function() {
         $.ajax({
-            url: '/pagination/tabledemo.get_table/',
+            url: '/pagination/get_table/',
             data: {
                 table_page: container.data('page')
             }
         }).success(function(data) {
               container.html(data)
         });
-    }).trigger('table_refresh');
+    });
+    container.trigger('table_refresh');
 });

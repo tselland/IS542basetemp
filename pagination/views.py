@@ -16,6 +16,7 @@ def get_table(request):
     params = {}
 
     users = UserTable(mod.User.objects.all())
+    print("<<<<<<<<<<<<<<<<", users.__str__())
     users.paginate(request)
 
     params['table'] = users
