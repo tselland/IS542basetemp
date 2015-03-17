@@ -19,6 +19,13 @@ def get_table(request):
     print("<<<<<<<<<<<<<<<<", users.__str__())
     users.paginate(request)
 
+    for user in users.qry:
+        users.append([
+            user.first_name,
+            user.last_name,
+            user.email,
+        ])
+
     params['table'] = users
 
     return render_to_response('tabledemo.get_table.html', params)

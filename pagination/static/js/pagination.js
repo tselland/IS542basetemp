@@ -10,7 +10,7 @@ $(function(){
         console.log('previous page!');
         console.log(page);
         container.data('page', Math.max(0, page-1));
-        //container.trigger('table_refresh');
+        container.trigger('table_refresh');
 
     });
 
@@ -18,7 +18,7 @@ $(function(){
         var page = parseInt(container.data('page'));
         console.log('next page!');
         container.data('page', Math.min(20, page+1));
-        //container.trigger('table_refresh');
+        container.trigger('table_refresh');
         console.log(page);
     });
 

@@ -12,7 +12,7 @@ class Table(list):
 
     def paginate(self, request):
         try:
-            page = int(request.urlparams[0])
+            page = int(request.REQUEST.get('table_page'))
         except ValueError:
             page = 0
         self.qry = self.qry[page * self.rows_per_page: (page + 1) * self.rows_per_page]
@@ -29,10 +29,9 @@ class Table(list):
         html.append('</tr>')
 
         #table data
-        for obj in self.qry:
+        for row in self:
             html.append('<tr>')
-            for field in self.fields:
-                item = getattr(obj, field)
+            for item in row:
                 html.append('<td>{}</td>'.format(item))
             html.append('</tr>')
         html.append('</table>')
