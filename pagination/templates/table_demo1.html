@@ -1,11 +1,10 @@
-{% extends "home-template.html" %}
-{% load staticfiles %}
-
-{% block css-custom %}
-
-{% endblock %}
-
-{% block main-center %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
     <div id="table_container" data-page="${ initial_page }">
         Table Goes here
     </div>
@@ -15,8 +14,7 @@
         <button id="next_page_btn" class="btn btn-default">Next Page</button>
     </div>
 
-{% endblock %}
-
-{% block js-custom %}
-    <script type="text/javascript" src="{% static "js/pagination.js" %}"></script>
-{% endblock %}
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="/static/js/pagination.js"></script>
+</body>
+</html>
