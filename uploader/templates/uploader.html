@@ -1,0 +1,26 @@
+{% extends "home-template.html" %}
+{% load staticfiles %}
+
+{% block css-custom %}
+{% endblock %}
+
+{% block main-center %}
+
+    <h1>
+        Upload your file here:
+    </h1>
+    <div align="center">
+        <form method="POST">
+            <table>
+                {{ form }}
+            </table>
+            <input type="submit" />
+        </form>
+    </div>
+
+
+{% endblock %}
+
+{% block js-custom %}
+    <script type="text/javascript" src="{% static "js/uploader.js" %}"></script>
+{% endblock %}

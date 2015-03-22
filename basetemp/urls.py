@@ -9,6 +9,8 @@ urlpatterns = patterns('',
     url(r'^gallery', 'gallery.views.gallery'),
     url(r'^pagination/get_table', 'pagination.views.get_table'),
     url(r'^pagination', 'pagination.views.pagination'),
+    url(r'^uploader_upload', 'uploader.views.upload'),
+    url(r'^uploader', 'uploader.views.uploader'),
 
     # url(r'^blog/', include('blog.urls')),
 
