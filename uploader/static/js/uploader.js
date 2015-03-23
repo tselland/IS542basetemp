@@ -2,12 +2,15 @@
  * Created by travisselland on 3/21/15.
  */
 $(function() {
-    $('#id_upload_file').off('change.uploader').on('change.uploader', function() {
+
+    var file = $('#id_upload_file');
+
+    file.off('change.uploader').on('change.uploader', function() {
         var fd = new FormData();
         var file = this.files[0];
-        fd.append('upload', file);
+        fd.append("upload", file);
         $.ajax({
-            url: '/uploader.upload/',
+            url: '/uploader_upload/',
             type: 'POST',
             contentType: false,
             processData: false,
@@ -25,6 +28,7 @@ $(function() {
                 return xhr;
             },
             success: function(data) {
+                $('id_upload_fullname').val(data);
                 console.log('Success');
                 console.log(data);
             },
@@ -34,5 +38,9 @@ $(function() {
             }
         });//ajax
     });//change
+
+    file.closest('form').off('submit.uploader').on('submit.uploader', function(){
+        file.remove();
+    });
 
 });//ready
