@@ -22,17 +22,11 @@ def uploader(request):
 
 class UploaderForm(forms.Form):
     name = forms.CharField()
-    upload_fullname = forms.CharField()#widget=forms.HiddenInput)
+    upload_fullname = forms.CharField(widget=forms.HiddenInput)
     upload_file = forms.FileField(required=False)
 
 
 def upload(request):
-
     fullname = os.path.join('/tmp/uploaded_files', request.FILES['upload'].name)
-    # f = open(fullname, 'wb')
-    # # f.write(...)
-    # f.close()
-
-    print('INSIDE UPLOAD')
 
     return HttpResponse(fullname)

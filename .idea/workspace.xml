@@ -4,6 +4,7 @@
     <list default="true" id="1ed4c2f7-e7cb-4a94-8703-88bf4a4b95e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploader/templates/uploader.html" afterPath="$PROJECT_DIR$/uploader/templates/uploader.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploader/static/js/uploader.js" afterPath="$PROJECT_DIR$/uploader/static/js/uploader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploader/views.py" afterPath="$PROJECT_DIR$/uploader/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="basetemp.iws" />
@@ -45,8 +46,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uploader/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="555">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -57,8 +58,8 @@
       <file leaf-file-name="uploader.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/uploader/static/js/uploader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.877193" vertical-offset="165" max-vertical-offset="840">
-              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.53216374" vertical-offset="342" max-vertical-offset="855">
+              <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
               <folding>
                 <element signature="e#0#47#0" expanded="false" />
               </folding>
@@ -69,10 +70,10 @@
       <file leaf-file-name="uploader.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uploader/templates/uploader.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25" vertical-offset="30" max-vertical-offset="540">
-              <caret line="20" column="148" selection-start-line="20" selection-start-column="148" selection-end-line="20" selection-end-column="148" />
+            <state vertical-scroll-proportion="-3.75" vertical-offset="30" max-vertical-offset="585">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <element signature="e#518#534#0#HTML" expanded="true" />
+                <element signature="e#528#544#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,9 +168,9 @@
         <option value="$PROJECT_DIR$/project1/templates/home-template.html" />
         <option value="$PROJECT_DIR$/basetemp/settings.py" />
         <option value="$PROJECT_DIR$/basetemp/urls.py" />
+        <option value="$PROJECT_DIR$/uploader/static/js/uploader.js" />
         <option value="$PROJECT_DIR$/uploader/views.py" />
         <option value="$PROJECT_DIR$/uploader/templates/uploader.html" />
-        <option value="$PROJECT_DIR$/uploader/static/js/uploader.js" />
       </list>
     </option>
   </component>
@@ -725,7 +726,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427154324567</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added ugly progress bar.">
+      <created>1427155575283</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1427155575283</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -792,7 +799,6 @@
       <TodoPanelSettings />
     </option>
     <confirmMoveToFailedCommit value="1" />
-    <MESSAGE value="Update to include scroll event, locking left sidebar." />
     <MESSAGE value="Added media queries and other bug fixes." />
     <MESSAGE value="Adjusted Title blocks" />
     <MESSAGE value="Added notification dismiss icon, Final commit before submission" />
@@ -817,7 +823,8 @@
     <MESSAGE value="uploader 2nd Video" />
     <MESSAGE value="uploader 2nd Video completion" />
     <MESSAGE value="Added views.py for uploader" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added views.py for uploader" />
+    <MESSAGE value="Added ugly progress bar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ugly progress bar." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1174,16 +1181,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uploader/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basetemp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
@@ -1196,18 +1193,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/uploader/templates/uploader.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="30" max-vertical-offset="540">
-          <caret line="20" column="148" selection-start-line="20" selection-start-column="148" selection-end-line="20" selection-end-column="148" />
+        <state vertical-scroll-proportion="-3.75" vertical-offset="30" max-vertical-offset="585">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#518#534#0#HTML" expanded="true" />
+            <element signature="e#528#544#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploader/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="555">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/uploader/static/js/uploader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.877193" vertical-offset="165" max-vertical-offset="840">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.53216374" vertical-offset="342" max-vertical-offset="855">
+          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
           <folding>
             <element signature="e#0#47#0" expanded="false" />
           </folding>

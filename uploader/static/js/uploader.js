@@ -33,15 +33,16 @@ $(function() {
                 return xhr;
             },
             success: function(data) {
-                $('id_upload_fullname').val(data);
-                progress.removeClass('active');
+                $('#id_upload_fullname').val(data);
+                progress.addClass('progress-bar-success');
                 console.log('Success');
                 console.log(data);
             },
             error: function(err) {
                 console.log('Error');
                 console.log(err);
-                
+                progress.addClass('progress-bar-danger');
+
             }
         });//ajax
     });//change
