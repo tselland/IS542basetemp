@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ed4c2f7-e7cb-4a94-8703-88bf4a4b95e8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploader/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploader/templates/uploader.html" afterPath="$PROJECT_DIR$/uploader/templates/uploader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploader/static/js/uploader.js" afterPath="$PROJECT_DIR$/uploader/static/js/uploader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="basetemp.iws" />
@@ -53,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uploader.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="uploader.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/uploader/static/js/uploader.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="735">
-              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.877193" vertical-offset="165" max-vertical-offset="840">
+              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
               <folding>
                 <element signature="e#0#47#0" expanded="false" />
               </folding>
@@ -68,13 +69,10 @@
       <file leaf-file-name="uploader.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uploader/templates/uploader.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="465">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state vertical-scroll-proportion="-11.25" vertical-offset="30" max-vertical-offset="540">
+              <caret line="20" column="148" selection-start-line="20" selection-start-column="148" selection-end-line="20" selection-end-column="148" />
               <folding>
-                <marker date="1426998459000" expanded="true" signature="130:171" placeholder="..." />
-                <marker date="1426998459000" expanded="true" signature="196:356" placeholder="..." />
-                <marker date="1426998459000" expanded="true" signature="225:345" placeholder="..." />
-                <marker date="1426998459000" expanded="true" signature="245:293" placeholder="..." />
+                <element signature="e#518#534#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basetemp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5263158" vertical-offset="0" max-vertical-offset="513">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
@@ -168,10 +166,10 @@
         <option value="$PROJECT_DIR$/pagination/templates/table_demo1.html" />
         <option value="$PROJECT_DIR$/project1/templates/home-template.html" />
         <option value="$PROJECT_DIR$/basetemp/settings.py" />
-        <option value="$PROJECT_DIR$/uploader/templates/uploader.html" />
         <option value="$PROJECT_DIR$/basetemp/urls.py" />
-        <option value="$PROJECT_DIR$/uploader/static/js/uploader.js" />
         <option value="$PROJECT_DIR$/uploader/views.py" />
+        <option value="$PROJECT_DIR$/uploader/templates/uploader.html" />
+        <option value="$PROJECT_DIR$/uploader/static/js/uploader.js" />
       </list>
     </option>
   </component>
@@ -721,7 +719,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427154206756</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added views.py for uploader">
+      <created>1427154324567</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1427154324567</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -746,7 +750,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1397" height="877" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -755,7 +759,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494465" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30110702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30110702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31082803" sideWeight="0.500369" order="7" side_tool="true" content_ui="tabs" />
@@ -812,7 +816,8 @@
     <MESSAGE value="Final push after assignment completion" />
     <MESSAGE value="uploader 2nd Video" />
     <MESSAGE value="uploader 2nd Video completion" />
-    <option name="LAST_COMMIT_MESSAGE" value="uploader 2nd Video completion" />
+    <MESSAGE value="Added views.py for uploader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added views.py for uploader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1161,34 +1166,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uploader/templates/uploader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="465">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <marker date="1426998459000" expanded="true" signature="130:171" placeholder="..." />
-            <marker date="1426998459000" expanded="true" signature="196:356" placeholder="..." />
-            <marker date="1426998459000" expanded="true" signature="225:345" placeholder="..." />
-            <marker date="1426998459000" expanded="true" signature="245:293" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pagination/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="47" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uploader/static/js/uploader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="222" max-vertical-offset="735">
-          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1204,10 +1186,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basetemp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5263158" vertical-offset="0" max-vertical-offset="513">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploader/templates/uploader.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="30" max-vertical-offset="540">
+          <caret line="20" column="148" selection-start-line="20" selection-start-column="148" selection-end-line="20" selection-end-column="148" />
+          <folding>
+            <element signature="e#518#534#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploader/static/js/uploader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.877193" vertical-offset="165" max-vertical-offset="840">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#47#0" expanded="false" />
           </folding>
         </state>
       </provider>
