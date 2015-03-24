@@ -19,8 +19,18 @@ def uploader(request):
 
     return render_to_response('uploader.html', params)
 
+def handle_uploaded_file(f):
+    with open(f.name, 'wb+') as destination:
+        for chunk in f.chunks():
+            destination.write(chunk)
+
 
 def upload(request):
-    fullname = os.path.join('/tmp/uploaded_files', request.FILES['upload'].name)
+    f = request.FILES['upload']
+    fullname = os.path.join('/tmp/uploaded_files', f.name)
+
+    with open(fullname, 'wb') as destination:
+        for chunk in f.chunks():
+            destination.write(chunk)
 
     return HttpResponse(fullname)
