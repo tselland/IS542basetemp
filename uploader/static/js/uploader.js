@@ -23,10 +23,8 @@ $(function() {
                     xhr.upload.addEventListener('progress', function (evt) {
                         if (evt.lengthComputable) {
                             progresswidth = (evt.loaded/evt.totalSize) * 100;
-                            console.log(progresswidth);
                             progress.width(progresswidth + '%');
                             //progress.aria-valuenow = progresswidth;
-                            console.log(evt);
                         }
                     }, false);
                 }
@@ -35,8 +33,7 @@ $(function() {
             success: function(data) {
                 $('#id_upload_fullname').val(data);
                 progress.addClass('progress-bar-success');
-                console.log('Success');
-                console.log(data);
+                $('.sr-only').innerHTML = 'Upload Successful';
             },
             error: function(err) {
                 console.log('Error');

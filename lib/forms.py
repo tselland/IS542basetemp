@@ -4,13 +4,8 @@ from django import forms
 import django.utils.html as htmlUtil
 from basetemp import middleware
 
-
-
 class ForecastForm(forms.Form):
     """ Base forecast form. This information will be submitted regardless of the number of events or announcements. """
-
-
-
 
     def __init__(self, request, *args, **kwargs):
         self.request = request
@@ -51,6 +46,11 @@ class ForecastForm(forms.Form):
     #         raise forms.ValidationError('Message Field Empty')
     #     return data
 
+
+class UploaderForm(forms.Form):
+    name = forms.CharField()
+    upload_fullname = forms.CharField(widget=forms.HiddenInput)
+    upload_file = forms.FileField(required=False)
 
 
 
